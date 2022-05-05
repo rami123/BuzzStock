@@ -25,7 +25,7 @@
 	import java.text.DateFormat;
 	import java.text.SimpleDateFormat;
 	import java.util.Calendar;
-	import org.jsoup.Jsoup; // used to clean text from html 
+	import org.jsoup.Jsoup; // used to clean text from html
 
 	/****************************************************************************************************************
 	 * 
@@ -176,7 +176,7 @@
 					// needed to set user agent as a browser, or else google will return 403 // rami 
 					// System.setProperty("https.agent", "Mozilla/3.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/3.0)");
 					System.setProperty("http.agent", "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)"); 
-					// url = new URL("http://www.google.co.il/search?q=àôøé÷ä");
+					// url = new URL("http://www.google.co.il/search?q=Ã Ã´Ã¸Ã©Ã·Ã¤");
 					url = new URL(webpage_list[i].address);
 					isr = new InputStreamReader(url.openStream(), webpage_list[i].cpCode);   
 					in = new BufferedReader(isr);   
@@ -300,7 +300,7 @@
 			BufferedReader in = null;
 			String line; 
 
-			final String FALSE_POSITIVE_STOCKS = "îðééä,îðéä,NY";
+			final String FALSE_POSITIVE_STOCKS = "Ã®Ã°Ã©Ã©Ã¤,Ã®Ã°Ã©Ã¤,NY";
 			
 			int index = FALSE_POSITIVE_STOCKS.indexOf(token);
 			if (index !=-1) //token is on false positive list 
